@@ -1,4 +1,3 @@
-
 .main-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -83,7 +82,7 @@ header{
     margin: 0 auto;
 }
 /* Media cueri for nav */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .nav-list li:not(#Cart) {
     display: none; /* Hide Home, Shop, About Us */
   }
@@ -117,12 +116,16 @@ span {
     color: #E95A08;
 }
 .banner-section {
+    max-width: 1140px;
+    margin: 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    margin-top: 2rem;
+    gap: 2rem; /* Optional spacing between items */
 }
+
+
 .hero{
     max-width: 570px;
     margin: 0 auto;
@@ -131,5 +134,35 @@ span {
 .banner-text {
     width: 570px;
     height: 300px;
+    margin-bottom: 0;
+    align-items: center;
+}  
 
+@media (max-width: 576px) {
+  .banner-section {
+    flex-direction: column-reverse;
+    /* padding: 1rem; */
+    /* text-align: center; */
+  }
+
+  .banner-text {
+    width: 100%;
+    height: auto;
+  }
+
+  .fresh-flower, .fresh-flower span {
+    font-size: 2.2rem; /* Smaller heading for mobile */
+  }
+
+  .fresh-description {
+    font-size: 1rem;
+    /* padding: 0 1rem;
+    text-align: left; */
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
 }

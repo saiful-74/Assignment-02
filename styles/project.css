@@ -1,148 +1,264 @@
+/* Font Setup */
 .main-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 .inter-font {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
   font-size: 1rem;
 }
 
-
-/* .nav {
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-} */
-
+/* Navbar */
 .nav {
-  max-width: 1140px; /* Same width as banner-section */
-  margin: 0 auto;     /* Center align */
+  max-width: 1140px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Optional horizontal padding */
+  padding: 1rem 2rem;
 }
 
-
-.nav-list{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin-right: 10px;
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-right: 10px;
 }
 
-li,a{
-    text-decoration: none;
+.nav-list a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 
+/* Typography */
 .bold {
-    font-family: inter;
-    color: #252432;
-    font-weight: regular;
+  color: #252432;
 }
 
 .semi-bold a {
+  font-weight: 400;
+  color: #000;
+}
+
+header {
+  margin: 0 auto;
+}
+
+/* Banner Section */
+.banner-section {
+  max-width: 1140px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.hero {
+  max-width: 570px;
+  margin: 0 auto;
+  height: 355px;
+}
+
+.ffs{
+    margin-top: 110px;
+}
+
+.banner-text {
+  width: 570px;
+  height: 300px;
+}
+
+.fresh-flower,
+span {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #E95A08;
+}
+
+.fresh-description {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  color: #000;
-  text-decoration: none;
+  font-size: 1.45rem;
 }
 
-
-.nav-list a {
-  color: #000; /* or your preferred color */
-  text-decoration: none;
+#our {
+  font-size: 3rem;
 }
-/* 
-#cart{
-font-family: "Inter", sans-serif;
-  font-weight: regular;
-  font-size: 1rem;
-} */
 
+/* Product Grid */
+.card-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px 20px;
+}
 
-/* .black {
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title,
+.card-price {
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-size: 1.35rem;
+  color: #111;
+}
+
+.card-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card-btn {
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.fresh-flowers {
+  text-align: center;
+}
+
+.fresh-flowers-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.plants-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 888px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+/* Handle carefully */
+.main-banar-text h1{
+    font-family: "Noto Serif", serif ;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+.abc{
+    font-weight: 200;
+    padding-top: 50px;
+  
+} 
+.abc li{
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;   
-} */
-
-header{
-    margin: 0 auto;
+    font-weight: regular;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    gap: 130px;
+    text-align: left;
 }
-/* Media cueri for nav */
+
+.main-banar-text{
+    max-width: 540px;
+    max-height: 521px;
+}
+
+.main-section-img{
+    width: 100%;
+    position: relative;
+    max-width: 540px;
+}
+
+
+.main-section-img {
+  position: relative;
+  display: inline-block; 
+}
+.beautiful{
+  width: 100%;
+  display: block;
+  height: auto
+}
+.badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100px;
+    transform: translate(25%,-28%);
+}
+.main-banar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 150px;
+    height: 600px;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 576px) {
-  .nav-list li:not(#Cart) {
-    display: none; /* Hide Home, Shop, About Us */
+  .nav {
+    padding: 1rem;
   }
 
-  /* Optional: Space cart to right */
   .nav-list {
     margin-left: auto;
+    gap: 0.5rem;
+    width: auto;
   }
 
-  /* Optional: Resize logo on mobile */
+  .nav-list li {
+    display: none;
+  }
+
+  #Cart {
+    display: block;
+  }
+
   .logo-design img {
     max-width: 120px;
     height: auto;
   }
-}
-/* end nav */
-.fresh-flower{
-    font-family: "Noto Serif", serif;
-    font-weight: bold;
-    font-size: 4rem;
-}
-.fresh-description{
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.45rem; 
-}
-span {
-    font-family: "Noto Serif", serif;
-    font-weight: bold;
-    font-size: 4rem; 
-    color: #E95A08;
-}
-.banner-section {
-    max-width: 1140px;
-    margin: 2rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem; /* Optional spacing between items */
-}
 
-
-.hero{
-    max-width: 570px;
-    margin: 0 auto;
-    height: 355px;
-}
-.banner-text {
-    width: 570px;
-    height: 300px;
-    margin-bottom: 0;
-    align-items: center;
-}  
-
-@media (max-width: 576px) {
   .banner-section {
     flex-direction: column-reverse;
-    /* padding: 1rem; */
-    /* text-align: center; */
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
   }
 
   .banner-text {
@@ -150,19 +266,38 @@ span {
     height: auto;
   }
 
-  .fresh-flower, .fresh-flower span {
-    font-size: 2.2rem; /* Smaller heading for mobile */
+  .fresh-flower,
+  .fresh-flower span {
+    font-size: 2rem;
   }
 
   .fresh-description {
     font-size: 1rem;
-    /* padding: 0 1rem;
-    text-align: left; */
+    padding: 0 1rem;
   }
 
   .hero {
     width: 100%;
-    height: auto;
     max-width: 300px;
+    height: auto;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .card-btn {
+    width: 100%;
+  }
+
+  .fresh-flowers-title {
+    font-size: 2rem;
+  }
+
+  .plants-description {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }

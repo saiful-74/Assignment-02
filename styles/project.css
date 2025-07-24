@@ -16,12 +16,23 @@
   font-size: 1rem;
 }
 
-.nav {
+
+/* .nav {
   display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+} */
+
+.nav {
+  max-width: 1140px; /* Same width as banner-section */
+  margin: 0 auto;     /* Center align */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Optional horizontal padding */
 }
+
 
 .nav-list{
     display: flex;
@@ -87,4 +98,38 @@ header{
     max-width: 120px;
     height: auto;
   }
+}
+/* end nav */
+.fresh-flower{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.fresh-description{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.45rem; 
+}
+span {
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 4rem; 
+    color: #E95A08;
+}
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.hero{
+    max-width: 570px;
+    margin: 0 auto;
+    height: 355px;
+}
+.banner-text {
+    width: 570px;
+    height: 300px;
+
 }
